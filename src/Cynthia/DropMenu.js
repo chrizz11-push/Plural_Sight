@@ -28,6 +28,16 @@ const SideBar = ({toggle, setToggle}) => {
                 <hr/>
                </Holder>
               
+               <Holder>
+               <span> Sign In <Icon1/></span>
+                <hr/>
+               </Holder>
+              
+               <Holder>
+               <Button>Try For Free</Button>
+                <hr/>
+               </Holder>
+              
             </Content>
            
         </Container>
@@ -38,15 +48,38 @@ export default SideBar
 
 
 const Container = styled.div`
-width: 400px;
+width: 100%;
 height: 80vh;
-background-color: #e7472c;
+background-color:#000000;
+
+@media screen and (min-width: 886px){
+    display: none
+}
+`
+
+const Button = styled.div`
+width: 600px;
+height: 60px;
+background-color:transparent;
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 60px;
+margin-bottom: 20px;
+
+&:hover{
+    border: 2px solid white; 
+    transition:all 350ms;
+    transform: scale(1);
+
+}
 `
 
 const Content = styled.div`
 padding-top: 30px;
-height: 45%;
-width: 90%;
+height: 80%;
+width: 100%;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -66,8 +99,9 @@ span{
 }
 
  hr{
-   
-/* width: 90%;  */
+   border: 1px solid white;
+   opacity: 0.5;
+width: 100%; 
 } 
 `
 

@@ -53,6 +53,9 @@ const Menu = styled(CgMenuRightAlt)`
 font-size:40px;
 font-weight:bold;
 
+@media screen and (min-width: 886px){
+    display: none;
+}
 @media screen and (max-width: 886px){
     display: block;
 }
@@ -87,7 +90,7 @@ justify-content: space-between;
 align-items: center;
 font-size:20px;
 font-weight:bold;
-background-color:red
+/* background-color:red */
 `
 // const Search = styled.div``
 const Sign = styled.div`
