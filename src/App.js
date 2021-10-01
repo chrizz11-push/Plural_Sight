@@ -1,13 +1,17 @@
+
 import React from 'react'
+import Header from './Cynthia/Header'
+import DropMenu from './Cynthia/DropMenu'
+import { BrowserRouter, Route, Switch, } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-      hello world, trying to update
-hello world
-hello world
-
-    </div>
+    <BrowserRouter>
+    <Header/>
+      <Switch>
+        <Route />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
